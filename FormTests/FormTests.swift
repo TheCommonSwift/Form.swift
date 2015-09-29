@@ -1,11 +1,3 @@
-//
-//  FormTests.swift
-//  FormTests
-//
-//  Created by Quico Moya on 29/09/15.
-//  Copyright © 2015 Unister. All rights reserved.
-//
-
 import XCTest
 @testable import Form
 
