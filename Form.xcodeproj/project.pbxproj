@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9AB3DA791BBAA37B009A9332 /* Form.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB3DA781BBAA37B009A9332 /* Form.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AB3DA801BBAA37B009A9332 /* Form.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB3DA751BBAA37B009A9332 /* Form.framework */; settings = {ASSET_TAGS = (); }; };
-		9AB3DA851BBAA37B009A9332 /* FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3DA841BBAA37B009A9332 /* FormTests.swift */; };
 		9AB3DA901BBAA3AB009A9332 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3DA8F1BBAA3AB009A9332 /* Form.swift */; settings = {ASSET_TAGS = (); }; };
 		9AB3DA921BBAA3B4009A9332 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3DA911BBAA3B4009A9332 /* Section.swift */; settings = {ASSET_TAGS = (); }; };
 		9AB3DA941BBAA41E009A9332 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3DA931BBAA41E009A9332 /* Field.swift */; settings = {ASSET_TAGS = (); }; };
@@ -30,7 +29,6 @@
 		9AB3DA781BBAA37B009A9332 /* Form.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Form.h; sourceTree = "<group>"; };
 		9AB3DA7A1BBAA37B009A9332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB3DA7F1BBAA37B009A9332 /* FormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AB3DA841BBAA37B009A9332 /* FormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTests.swift; sourceTree = "<group>"; };
 		9AB3DA861BBAA37B009A9332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB3DA8F1BBAA3AB009A9332 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		9AB3DA911BBAA3B4009A9332 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		9AB3DA831BBAA37B009A9332 /* FormTests */ = {
 			isa = PBXGroup;
 			children = (
-				9AB3DA841BBAA37B009A9332 /* FormTests.swift */,
 				9AB3DA861BBAA37B009A9332 /* Info.plist */,
 			);
 			path = FormTests;
@@ -117,6 +114,7 @@
 				9AB3DA711BBAA37B009A9332 /* Frameworks */,
 				9AB3DA721BBAA37B009A9332 /* Headers */,
 				9AB3DA731BBAA37B009A9332 /* Resources */,
+				1158A1D71BC9212B0062B067 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -198,6 +196,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1158A1D71BC9212B0062B067 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9AB3DA701BBAA37B009A9332 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -213,7 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB3DA851BBAA37B009A9332 /* FormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +405,7 @@
 				9AB3DA8B1BBAA37B009A9332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AB3DA8C1BBAA37B009A9332 /* Build configuration list for PBXNativeTarget "FormTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +414,7 @@
 				9AB3DA8E1BBAA37B009A9332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
