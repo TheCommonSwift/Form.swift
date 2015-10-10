@@ -1,11 +1,3 @@
-//
-//  Form.h
-//  Form
-//
-//  Created by Quico Moya on 29/09/15.
-//  Copyright © 2015 Unister. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for Form.
